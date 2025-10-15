@@ -2,7 +2,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { MainLayout } from "@layouts/index";
 import Error from "@pages/Error";
-import Home from "@pages/Home";
+import User from "@pages/Users";
 
 const router = createBrowserRouter([
     {
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />
+                element: <User />
             }
         ]
     }
