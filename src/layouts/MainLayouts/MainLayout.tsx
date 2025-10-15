@@ -1,4 +1,4 @@
-import styles from "./Styles.module.css"
+import styles from "./styles.module.css"
 import { Outlet } from "react-router-dom";
 
 const { container } = styles;

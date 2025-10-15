@@ -45,3 +45,6 @@ npm install
 npm run dev
 ```
 ---
+
+### ** Live Demo for the Dashboard **
+[https://storied-zabaione-781abf.netlify.app/](https://storied-zabaione-781abf.netlify.app/)
