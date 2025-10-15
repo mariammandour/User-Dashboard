@@ -32,6 +32,8 @@ export const Users = () => {
 
     const handleRetry = () => {
         dispatch(getUsers());
+        dispatch(setSearchInputText(""));
+        dispatch(setCurrentPage(1));
     };
 
     useEffect(() => {

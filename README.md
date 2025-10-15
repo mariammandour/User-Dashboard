@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# 👥 React User Dashboard  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview  
+This is a **React-based User Dashboard** that fetches and displays a list of users using **Redux Toolkit**.  
+The dashboard supports **search**, **pagination**, and **real-time loading states**, providing a clean and responsive user experience built with **Material UI (MUI)**.  
+It also includes a **modal for viewing detailed user information**, allowing users to explore more data without leaving the main dashboard.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
+✔️ Fetch users dynamically via API using Redux Toolkit.  
+✔️ Search users by name with instant filtering.  
+✔️ Pagination (10 users per page) with MUI Pagination component.  
+✔️ Loading, success, and error states with retry functionality.  
+✔️ Modern UI built using Material UI components.  
+✔️ Responsive grid layout for user cards.  
+✔️ TypeScript-based with clear type definitions for user data.  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Tech Stack  
+- ⚛️ **React 19**  
+- 🧠 **Redux Toolkit**  
+- 💅 **Material UI **  
+- 🔗 **Axios**  
+- 🧰 **TypeScript**  
+- ⚡ **Vite** (for fast development and build)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔧 Installation & Setup  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/mariammandour/User-Dashboard.git
+cd User-Dashboard
+```
+### 2️⃣ **Install Dependencies**
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 3️⃣ **Run the Development Server**
+```bash
+npm run dev
 ```
+---
